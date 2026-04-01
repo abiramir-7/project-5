@@ -1,0 +1,5 @@
+Pandas 
+Streamlit 
+Selenium 
+Scikit-learn 
+Nltk (Natural Language Toolkit)
