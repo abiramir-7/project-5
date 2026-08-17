@@ -1,23 +1,30 @@
-# IMDB Movie Recommendation System Using Storylines (2024)
+# IMDb Movie Recommendation System Using Storylines (2024)
 
 ## Project Overview
-This project scrapes movie data for 2024 from IMDb and uses Natural Language Processing (NLP) to recommend movies based on storyline similarity.
+
+This project is a **movie recommendation system** that recommends movies based on the similarity between a user's input storyline and movie storylines from 2024.
+
+The project uses **IMDb movie data**, Natural Language Processing (NLP), TF-IDF Vectorization, and Cosine Similarity to find the most similar movies.
 
 ## Skills Applied
+
 - **Web Scraping:** Selenium
-- **Data Analysis:** Pandas
-- **Machine Learning:** TF-IDF Vectorization & Cosine Similarity
+- **Data Handling:** Pandas
+- **Natural Language Processing:** Text preprocessing
+- **Feature Extraction:** TF-IDF Vectorization
+- **Machine Learning:** Cosine Similarity
 - **Web App Development:** Streamlit
 
-## Workflow & Execution
-1. **Data Collection:** Run `scraping.py` to extract 2024 movie names and storylines into `movies_2024.csv`.
-2. **Text Processing:** The system cleans storylines by removing stop words and punctuation.
-3. **Vectorization:** TF-IDF converts text into numerical vectors.
-4. **Recommendation:** Cosine Similarity calculates the distance between the user input and the dataset to find the top 5 matches.
-5. **Launch App:** Run `streamlit run app.py` to start the interactive interface.
+## Dataset
 
-## How to Run
-```bash
-pip install -r requirements.txt
-python scraping.py
-streamlit run app.py
+The dataset was collected from IMDb using Selenium.
+
+The dataset contains:
+
+- Movie Name
+- Storyline
+
+The collected data is stored in:
+
+```text
+movies_2024.csv
